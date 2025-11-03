@@ -1,0 +1,70 @@
+/* Styles specific to services.html */
+h1 { margin-top: 0; }
+.services-list { margin: 0.5rem 0 1rem 0; padding-left: 1.25rem; }
+.services-list li { margin-bottom: 0.5rem; }
+
+.contact-cta { margin-top: 1rem; }
+
+#vip {
+    padding: 40px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: #a8e3ef; /* soft blue */
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: var(--text-color);
+}
+
+#vip:hover {
+    background-color: #7fd2e7;
+}
+#vip img {
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        display: block;
+        margin: 0; 
+}
+
+
+
+
+
+.cars-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+    align-items: start;
+    background-color: brown;
+}
+
+
+.cars {
+    background: transparent; 
+    padding: 0 1rem; 
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    text-align: left;
+}
+
+.cars img {
+    display: block;
+    margin: 0 auto 1rem auto; 
+    width: 200px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.cars h3 {
+    text-align: left;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+}
+
+.cars .subtitle { font-weight:700; margin-bottom:0.5rem; text-align:left; }
+
+.cars ul { margin: 0; padding-left: 1rem; color: var(--text-color); }
+.cars li { margin-bottom: 0.45rem; font-size: 0.96rem; }

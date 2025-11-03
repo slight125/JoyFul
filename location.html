@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Location — AllanStore</title>
+  <link rel="icon" type="image/png" href="assets/images/location.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="top-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="location.html">Location</a></li>
+    </ul>
+  </nav>
+  <h1>Our Location</h1>
+
+  <section class="map-container" aria-labelledby="map-heading">
+    <h2 id="map-heading" style="display:none">Map showing AllanStore location</h2>
+
+    <!-- Embedded map centered on Nairobi, Kenya. Using a generic embed query so no API key is required. -->
+    <iframe
+      class="map-frame"
+      title="AllanStore location map (Nairobi, Kenya)"
+      src="https://www.google.com/maps?q=Nairobi+Kenya&output=embed"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+
+    <address>
+      AllanStore<br>
+      Nairobi, Kenya<br>
+      Email: <a href="mailto:info@allanstore.com">info@allanstore.com</a>
+    </address>
+  </section>
+
+  <p><a href="index.html">Back to Home</a> • <a href="about.html">About lists</a> • <a href="products.html">Products</a></p>
+</body>
+</html>

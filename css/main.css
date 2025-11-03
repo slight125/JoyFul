@@ -1,0 +1,63 @@
+/* Global site styles for AllanStore */
+:root {
+	--brand-color: #0066cc;
+	--text-color: #000; /* use true black for all primary text */
+	--muted: #000; /* lists and muted text use black as requested */
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Segoe UI", Roboto, Arial, sans-serif;
+	line-height: 1.5;
+	padding: 1rem;
+	color: var(--text-color);
+	margin: 0;
+}
+
+/* Top navigation */
+.top-nav {
+	background: #f8f8f8;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 0.5rem 1rem;
+	margin-bottom: 1rem;
+}
+.top-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; align-items: center; }
+.top-nav a { color: var(--text-color); text-decoration: none; font-weight: 600; }
+.top-nav a:hover { text-decoration: underline; }
+.top-nav .active { color: var(--brand-color); }
+
+/* Images */
+img { max-width: 100%; height: auto; display: block; }
+
+/* Store details (descriptive list) */
+section[aria-labelledby="store-details"] dl {
+	display: grid;
+	grid-template-columns: 160px 1fr;
+	gap: 0.25rem 1rem;
+	align-items: start;
+	margin: 0.5rem 0 0 0;
+	padding: 0;
+}
+section[aria-labelledby="store-details"] dt { font-weight: 700; margin: 0; }
+section[aria-labelledby="store-details"] dd { margin: 0 0 0.5rem 0; }
+section[aria-labelledby="store-details"] dd a { color: var(--brand-color); text-decoration: none; }
+section[aria-labelledby="store-details"] dd a:hover { text-decoration: underline; }
+
+/* Map */
+.map-frame { width: 100%; height: 450px; border: 0; }
+
+/* Product grid */
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+.product { border: 1px solid #e0e0e0; padding: 0.5rem; border-radius: 6px; text-align: center; background: #fff; }
+.product img { max-width: 100%; height: 120px; object-fit: cover; display: block; margin: 0 auto 0.5rem; }
+.price { color: var(--brand-color); font-weight: 700; }
+
+/* Utility container */
+.container { max-width: 1000px; margin: 0 auto; }
+
+/* Footer / small links */
+hr { border: none; border-top: 1px solid #eee; margin: 1.25rem 0; }
+
